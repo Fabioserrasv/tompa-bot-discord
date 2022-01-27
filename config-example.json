@@ -1,0 +1,5 @@
+{
+    "prefix":"YOUR_BOT_PREFIX",
+    "mongopass":"YOUR_MONGO_DATABASE_PASS",
+    "token":"YOUR_DISCORD_BOT_TOKEN"
+}
