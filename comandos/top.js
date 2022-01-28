@@ -3,7 +3,7 @@ const desenvolvimento = false
 if(desenvolvimento == false){
 const Discord = require('discord.js');
 const {Client, MessageEmbed} = require('discord.js');
-const config = require("../config.json")
+//const config = require("../config.json")
 const mongoose = require("mongoose");
 
 function kFormatter(num) {
