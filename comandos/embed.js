@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
     
     //const hornyJail = client.channels.cache.find(channel => channel.id === '755098963098599524')
 
-    message.channel.messages.fetch({ limit: 5 }).then(messages => {
+    message.channel.messages.fetch({ limit: 15 }).then(messages => {
         let lastMessage = messages.first();
         
         messages.every(mensagem =>{
