@@ -37,6 +37,8 @@ function bigboobs(mensagem) {
   const reactEmoji = ["⬅️", "➡️"]
   JSDOM.fromURL(linkEncode).then(dom => {
     let allImages = dom.window.document.getElementsByClassName('attachment-large')
+    if(allImages.length == 0){allImages = dom.window.document.getElementsByClassName('peg-photo')}
+    if(allImages.length == 0){mensagem.channel.send('Não foi possivel realizar o procedimento.');return;}
     Array.from(allImages).forEach((image) => {
       pages.push(new MessageEmbed().setImage(image.src))
     });
