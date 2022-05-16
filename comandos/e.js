@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args) => {
             if(args[0] == 'n' || args[0] == 'nitter' || args[0] == 'ni'){
               novoLink = mensagem.content.replace("https://twitter.com", "https://nitter.silkky.cloud")
             }else{
-              novoLink = mensagem.content.replace("https://twitter.com", "https://fxtwitter.com")
+              novoLink = mensagem.content.replace("https://twitter.com", "https://vxtwitter.com")
             }
 
             message.channel.send(novoLink)
